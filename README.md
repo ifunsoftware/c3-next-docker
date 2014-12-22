@@ -22,5 +22,19 @@ docker build -t ifunsoftware/c3-next .
 docker run -d -p 8080:8080 -p 7375:7375 -p 8443:8443 ifunsoftware/c3-next
 ```
 
+## How To Access
+
+### C3 Management Console
+
+http://\<your-server\>:8080/manage/
+
+Basic Auth credentials:
+
+* login: `admin`
+* password: `password`
+
+### API
+
+*TODO*
 
 
