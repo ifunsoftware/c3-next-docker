@@ -37,4 +37,7 @@ Basic Auth credentials:
 
 *TODO*
 
+## About image
 
+Base image of this Docker container:
+https://github.com/ifunsoftware/c3-base-docker
