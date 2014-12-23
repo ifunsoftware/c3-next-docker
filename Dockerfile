@@ -12,6 +12,6 @@ RUN cp /opt/c3-app/server/pickup/c3.plan /opt/virgo/pickup/
 
 RUN rm -rf /opt/c3-app 
 
-EXPOSE 8080 8443 7375
+EXPOSE 22 8080 8443 7375
 
-CMD JAVA_HOME="$(update-java-alternatives -l | cut -d ' ' -f 3)" JAVA_OPTS="-Xmx1024m -Dc3.home=/opt/c3/config -Dc3.data=/opt/c3/data" /opt/virgo/bin/startup.sh
+ENTRYPOINT ["/usr/bin/supervisord"]
