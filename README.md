@@ -19,7 +19,7 @@ docker build -t ifunsoftware/c3-next .
 ## Run
 
 ```
-docker run -d -p 8080:8080 -p 7375:7375 -p 8443:8443 ifunsoftware/c3-next
+docker run -d -p 8082:22 -p 8080:8080 -p 7375:7375 -p 8443:8443 ifunsoftware/c3-next
 ```
 
 ## How To Access
@@ -32,6 +32,12 @@ Basic Auth credentials:
 
 * login: `admin`
 * password: `password`
+
+### SSH
+
+ssh -p 8022 root@\<your-server\>
+
+* 'root' password: `password`
 
 ### API
 
