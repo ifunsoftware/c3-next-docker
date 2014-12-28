@@ -10,7 +10,7 @@ RUN chmod +x /usr/bin/start_c3.sh
 # Fetch latest c3-next build
 RUN wget -q -O /opt/c3.jar 'http://repository.ifunsoftware.com/service/local/artifact/maven/redirect?r=snapshots&g=org.aphreet.c3&a=c3-deploy&v=LATEST' --content-disposition
 
-RUN mkdir -p /opt/c3-app && unzip /opt/c3.jar -d /opt/c3-app && rm /opt/c3.jar
+RUN mkdir -p /opt/c3-app && unzip -q /opt/c3.jar -d /opt/c3-app && rm /opt/c3.jar
 
 RUN rm -rf /opt/virgo/repository/usr/* && rm -rf /opt/virgo/pickup/*
 
