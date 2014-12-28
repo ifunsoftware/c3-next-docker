@@ -22,6 +22,12 @@ docker build -t ifunsoftware/c3-next .
 docker run -d -p 8082:22 -p 8080:8080 -p 7375:7375 -p 8443:8443 ifunsoftware/c3-next
 ```
 
+To have a system with persistent state, create a dir for config and data (like /var/lib/c3) and pass it in command line with volume argument:
+
+```
+docker run -d -p 8082:22 -p 8080:8080 -p 8443:8443 -p7375:7375 -v /var/lib/c3:/opt/c3 ifunsoftware/c3-next
+```
+
 ## How To Access
 
 ### C3 Management Console
